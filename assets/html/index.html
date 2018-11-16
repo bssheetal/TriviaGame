@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div class="container">
+        <form class="Triviaform" id="Triviaform">
+            <div>TimeRemaining</div>
+            <div id="display">00:60</div>
+            <div class="row">
+                <div class="col-sm-3">Which is the biggest state in USA?</div>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <label id="Q1Label1"><input type="radio" id="Q1Radio1" name="customRadioInline1" value="IA">
+                    Texas</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <label><input type="radio" id="Q1Radio2" name="customRadioInline1" value="CA" >
+                    Alaska</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <label><input type="radio" id="Q1Radio3" name="customRadioInline1" value="IA">
+                    NY</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <label><input type="radio" id="Q1Radio4" name="customRadioInline1" value="IA">
+                    CA</label>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">Who invented C?</div>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <label><input type="radio" id="Q2Radio1" name="customRadioInline2" value="IA">
+                    Newton</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <label><input type="radio" id="Q2Radio2" name="customRadioInline2" value="IA" >
+                    Dennis Park </label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <label><input type="radio" id="Q2Radio3" name="customRadioInline2" value="IA">
+                    Elon Musk</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <label><input type="radio" id="Q2Radio4" name="customRadioInline2" value="CA">
+                    Dennis Ritchie </label>
+            </div> 
+            <div id="correct-div"></div>    
+            <div id="Incorrect-div"></div>    
+            <div id="Unanswered-div"></div>     
+        </form>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../javascript/app.js"></script>
+</body>
+
+</html>

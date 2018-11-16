@@ -1,21 +1,5 @@
-.container {
-    position: relative;
-    width: 50%;
-  }
-
-  .container .btn {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: white;
-    color: royalblue;
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-weight:bold;
-    width: 138px;
-  }
+body 
+{
+    background-image: url("https://www.featurepics.com/StockImage/20070519/puzzle-background-stock-picture-322462.jpg");
+    width:100%;
+ }

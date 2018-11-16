@@ -1,0 +1,29 @@
+body 
+{
+    background-image: url("https://image.freepik.com/free-vector/blue-quiz-background-with-megaphone_23-2147599490.jpg");
+    width:100%;
+ }
+
+.container {
+    position: relative;
+    width: 100%;
+    height:100vh;
+  }
+
+  .btnstart {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    /*background-color: white;*/
+    color: royalblue;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight:bold;
+    width: 150px;
+    height:50px;
+  }
+
+ 
