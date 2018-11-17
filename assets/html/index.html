@@ -12,56 +12,69 @@
 </head>
 
 <body>
-    
+
     <div class="container">
         <form class="Triviaform" id="Triviaform">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="smallcontainer">
+                    <h1 class="display-4">Let's test your knowledge!</h1>
+                </div>
+            </div>
             <div>TimeRemaining</div>
             <div id="display">00:60</div>
-            <div class="row">
+            <div class="row" id="row1">
                 <div class="col-sm-3">Which is the biggest state in USA?</div>
             </div>
-            <div class="custom-control custom-radio custom-control-inline">
-                <label id="Q1Label1"><input type="radio" id="Q1Radio1" name="customRadioInline1" value="IA">
-                    Texas</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-                <label><input type="radio" id="Q1Radio2" name="customRadioInline1" value="CA" >
-                    Alaska</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-                <label><input type="radio" id="Q1Radio3" name="customRadioInline1" value="IA">
-                    NY</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-                <label><input type="radio" id="Q1Radio4" name="customRadioInline1" value="IA">
-                    CA</label>
+            <div class="row">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <label id="Q1Label1"><input type="radio" id="Q1Radio1" name="customRadioInline1" value="IA">
+                        Texas</label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                    <label><input type="radio" id="Q1Radio2" name="customRadioInline1" value="CA">
+                        Alaska</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <label><input type="radio" id="Q1Radio3" name="customRadioInline1" value="IA">
+                        NY</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <label><input type="radio" id="Q1Radio4" name="customRadioInline1" value="IA">
+                        CA</label>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-3">Who invented C?</div>
             </div>
-            <div class="custom-control custom-radio custom-control-inline">
-                <label><input type="radio" id="Q2Radio1" name="customRadioInline2" value="IA">
-                    Newton</label>
+            <div class="row">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <label><input type="radio" id="Q2Radio1" name="customRadioInline2" value="IA">
+                        Newton</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <label><input type="radio" id="Q2Radio2" name="customRadioInline2" value="IA">
+                        Dennis Park </label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <label><input type="radio" id="Q2Radio3" name="customRadioInline2" value="IA">
+                        Elon Musk</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <label><input type="radio" id="Q2Radio4" name="customRadioInline2" value="CA">
+                        Dennis Ritchie </label>
+                </div>
             </div>
-            <div class="custom-control custom-radio custom-control-inline">
-                <label><input type="radio" id="Q2Radio2" name="customRadioInline2" value="IA" >
-                    Dennis Park </label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-                <label><input type="radio" id="Q2Radio3" name="customRadioInline2" value="IA">
-                    Elon Musk</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-                <label><input type="radio" id="Q2Radio4" name="customRadioInline2" value="CA">
-                    Dennis Ritchie </label>
-            </div> 
-            <div id="correct-div"></div>    
-            <div id="Incorrect-div"></div>    
-            <div id="Unanswered-div"></div>     
+
+            <a class="btnsubmit btn-primary" href="" role="button">Submit</a>
+            <div id="Results">Results:</div>
+            <!--div id="correct-div"></div>
+            <div id="Incorrect-div"></div>
+            <div id="Unanswered-div"></div-->
         </form>
     </div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../javascript/app.js"></script>
 </body>
 
