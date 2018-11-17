@@ -3,6 +3,7 @@
 var correctanswers = 0;
 var Incorrectanswers = 0;
 var unanswered = 0;
+var TotalQuestions=3;
 var stopwatch = {
 
     time: 60
@@ -72,7 +73,7 @@ $("input[type='radio']").click(function () {
 
     correctanswers = $('input[value=CA]:checked').length;   
     Incorrectanswers = $('input[value=IA]:checked').length;   
-    unanswered = 3 - (correctanswers + Incorrectanswers);
+    unanswered = TotalQuestions - (correctanswers + Incorrectanswers);
     
 });
 
