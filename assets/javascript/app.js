@@ -1,3 +1,5 @@
+
+
 var correctanswers = 0;
 var Incorrectanswers = 0;
 var unanswered = 0;
@@ -70,7 +72,7 @@ $("input[type='radio']").click(function () {
 
     correctanswers = $('input[value=CA]:checked').length;   
     Incorrectanswers = $('input[value=IA]:checked').length;   
-    unanswered = 2 - (correctanswers + Incorrectanswers);
+    unanswered = 3 - (correctanswers + Incorrectanswers);
     
 });
 
