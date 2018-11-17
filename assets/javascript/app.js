@@ -6,9 +6,7 @@ var stopwatch = {
     time: 60
 }
 var intervalId;
-//var questions=["Which is the biggest state in USA?","Who invented C?"];
-//var answers=[["Texas","Alaska","NY","CA"],["Newton","Dennis Park","Elon Musk","Dennis Ritchie"]];
-//var arrcorrectanswer=["Alaska","Dennis Ritchie"];
+
 
 window.onload = function () {
     $(".btnstart").on("click", start());
@@ -18,7 +16,7 @@ function start() {
 
     // Use setInterval to start the count here and set the clock to running.
     intervalId = setInterval(count, 1000)
-
+    
 };
 
 function count() {
@@ -44,6 +42,7 @@ function stop() {
     // DONE: Use clearInterval to stop the count here and set the clock to not be running.
     clearInterval(intervalId);
     clockRunning = false;
+    $('#container').fadeOut(500);
     $("input[type=radio]").attr('disabled', true);
     score();
 }
@@ -69,20 +68,15 @@ function timeConverter(t) {
 
 $("input[type='radio']").click(function () {
 
-
-    correctanswers = $('input[value=CA]:checked').length;
-    // console.log("correct" + correctanswers);
-    Incorrectanswers = $('input[value=IA]:checked').length;
-    //console.log("Incorrect" + Incorrectanswers);
+    correctanswers = $('input[value=CA]:checked').length;   
+    Incorrectanswers = $('input[value=IA]:checked').length;   
     unanswered = 2 - (correctanswers + Incorrectanswers);
-    // console.log("Unanswered" + unanswered);
-
-
-
+    
 });
 
 function score() {
     var div = $("<div>");
+    div.append("All Done!");
     div.addClass("score-details");
     var NoofCorrectAnswers = $("<div>").text("CorrectAnswers: " + correctanswers);
     console.log(correctanswers);
