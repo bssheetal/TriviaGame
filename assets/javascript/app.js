@@ -47,6 +47,7 @@ function stop() {
     clockRunning = false;
     $('#container').fadeOut(500);
     $("input[type=radio]").attr('disabled', true);
+    calscore();
     score();
 }
 
@@ -71,9 +72,7 @@ function timeConverter(t) {
 
 $("input[type='radio']").click(function () {
 
-    correctanswers = $('input[value=CA]:checked').length;   
-    Incorrectanswers = $('input[value=IA]:checked').length;   
-    unanswered = TotalQuestions - (correctanswers + Incorrectanswers);
+    calscore();
     
 });
 
@@ -99,3 +98,10 @@ $(".btnsubmit").on("click", function(event)
     stop();
 
 });
+
+function calscore()
+{
+    correctanswers = $('input[value=CA]:checked').length;   
+    Incorrectanswers = $('input[value=IA]:checked').length;   
+    unanswered = TotalQuestions - (correctanswers + Incorrectanswers);
+}
